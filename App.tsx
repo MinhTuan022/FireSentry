@@ -2,14 +2,15 @@ import {View, Text} from 'react-native';
 import React from 'react';
 import {GestureHandlerRootView} from 'react-native-gesture-handler';
 import {NavigationContainer} from '@react-navigation/native';
+import HomeScreen from './src/screens/home/HomeScreen';
+import { LoginScreen } from './src/screens';
+import AuthNavigator from './src/navigators/AuthNavigator';
 
 const App = () => {
   return (
     <GestureHandlerRootView>
       <NavigationContainer>
-        <View>
-          <Text>App</Text>
-        </View>
+        <AuthNavigator/>
       </NavigationContainer>
     </GestureHandlerRootView>
   );
